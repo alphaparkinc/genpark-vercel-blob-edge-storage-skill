@@ -1,0 +1,30 @@
+{
+  "name": "genpark-vercel-blob-edge-storage-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Vercel Blob file upload simulation helper.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "vercel",
+    "blob",
+    "edge-storage"
+  ],
+  "inputs": {
+    "file_data_base64": {
+      "type": "string"
+    },
+    "target_path": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "blob_url": {
+      "type": "string"
+    },
+    "bytes_written": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
